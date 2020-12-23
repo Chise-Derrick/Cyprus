@@ -1,0 +1,241 @@
+
+
+.post {
+    align-items: center;
+    background: white;
+    background-size: cover;
+    background: linear-gradient(20deg, rgba(255, 255, 255, 1) 0%, rgba(253,187,45,0) 100%);
+    background-position: center;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-grow: 0;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    height: auto;
+    padding-bottom: 2px;
+    justify-content: center;
+    text-shadow: 0 0 5px black;
+    flex-direction: column;
+    border-bottom: 1px solid #999;
+    border-radius: 6px;
+    transition: all 0.2s ease-in;
+}
+
+.post__image {
+    z-index: 9999;
+    padding: 2px;
+    max-height: 163px;
+}
+
+.post:hover {
+    transform: scale(1.06);
+    margin-top: -3px;
+    margin-bottom: 3px;
+    box-shadow: 0 12px 9px 0 rgba(83, 56, 56, 0.46);
+}
+
+.post__header {
+    display: flex;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 1px;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-right: 7px;
+    background-color: rgba(236, 253, 248, 0.9);
+    border-radius: 7px;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.post__header > h3 {
+    margin-left: 5px;
+    font-size: 12px !important;
+    margin-top: -3px;
+}
+
+.MuiAvatar-root {
+    height: 15px !important;
+    width: 15px !important;
+}
+
+.MuiAvatar-colorDefault {
+    color: #fafafa;
+    font-size: 12px !important;
+    background-color: #007186 !important;
+}
+
+
+
+.over-under {
+    position: relative;
+    z-index: 10;
+    transition: opacity .3s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 9999;
+    border-radius: 2px;
+    background: linear-gradient(180deg, rgba(91, 104, 104, 0.7) 0%, rgba(255, 255, 255, 0.6) 100%);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+
+
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;}
+
+.masonry {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    height: 80vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90vw;
+}
+
+.main__container {
+    position: relative;
+    padding: 10px;
+    max-width: 1346px;
+    background: #e3eef3;
+}
+
+/*@media only screen and (min-width: 1000px) {
+    .main__container {
+    margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    .main__container {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1150px) {
+        .main__container {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+  main {
+
+    transform: scale(1.3);
+    margin-right: 50px;
+    margin-left: 205px;
+    width: 76% !important;
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  main {
+
+    transform: scale(1.4);
+    margin-right: 50px;
+    margin-left: 280px;
+    width: 70% !important;
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (min-width: 1950px) {
+  main {
+
+    transform: scale(1.4);
+    margin-right: 50px;
+    margin-left: 315px;
+    width: 70% !important;
+    margin-top: 180px;
+  }
+}
+
+@media only screen and (min-width: 2250px) {
+  main {
+
+    transform: scale(1.4);
+    margin-right: 50px;
+    margin-left: 350px;
+    width: 70% !important;
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (min-width: 2400px) {
+  main {
+
+    transform: scale(1.5);
+    margin-right: 50px;
+    margin-left: 430px;
+    width: 66% !important;
+    margin-top: 240px;
+  }
+}
+
+@media only screen and (min-width: 2550px) {
+  main {
+    transform: scale(1.5);
+    margin-right: 50px;
+    margin-left: 470px;
+    width: 66% !important;
+    margin-top: 280px;
+  }
+}*/
+.post__magnifier {
+    position:absolute;
+    display: flex;
+    top: 0; bottom: 5px; left: 0; right: 0;
+    margin: auto;
+    height: 60px;
+    color: white;
+    width: 60px;
+}
+
+.post__view {
+    position: absolute;
+    bottom: 28px;
+    width: 99%;
+    margin-left: 0;
+    height: 23px;
+    background: rgb(34,193,195);
+    box-shadow: 0 0 5px 0 rgba(158, 239, 239, 0.2);
+    background: linear-gradient(264deg, rgba(230, 252, 250, 0) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.post__view p {
+    color: black;
+    margin-top: 2px;
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.header__searchBar {
+    z-index: 999;
+}
+
+.spot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #007186;
+}

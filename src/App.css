@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+}
+
+
+.app {
+  background-color: #fafafb;
+/*  max-width: 1366px;*/
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1030px) {
+  .app {
+    background-color: #fff;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.app__modalImage {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  padding: 20px;
+  object-fit: contain;
+}
+
+.modal__center {
+  display: grid;
+}
+
+.app__signup {
+  display: flex;
+  flex-direction: column;
+}
+
+:root{
+  --color: #95e9ef;
+  --background: #1f1f1f;
+  --spacing: 1rem;
+  --speed: 1700ms;
+  --fontsize: 2rem;
+}
+
+.app__posts {
+  margin: 2rem 0;
+}
+
+main {
+  /* Prevent vertical gaps */
+  display: flex;
+  flex-flow: column wrap;
+  height: 29em;
+
+}
+
+.app__search {
+  z-index: 9999;
+}

@@ -1,0 +1,50 @@
+.featured {
+    width: 100%;
+}
+
+.featured__container {
+    margin-top: 9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.featured__items {
+    display: flex;
+/*    background-color: #88abb3;*/
+    background:linear-gradient(0deg, rgba(171, 209, 227, 0.45), rgba(171, 209, 227, 0));
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(52, 117, 169, 1) 31%, rgba(0,0,0,0) 100%);
+    border: 1px solid lightgrey;
+    background: radial-gradient(circle, rgba(169, 128, 52, 0.74), rgba(230, 255, 3, 0.26));
+    border-radius: 6px;
+    padding: 9px;
+    width: 100%;
+    justify-content: center;
+    margin-left: 2px;
+    margin-right: 2px;
+    box-shadow: inset 0 2px 2px 0 rgba(88, 40, 9, 0.26);
+    animation: example ease-in 10s infinite;
+
+}
+
+@keyframes example {
+    0%   {background-color: #fcfcfc;
+    background-size: 100%}
+    25%  {background-color: #fdfddc;
+        background-size: 200%}
+    50%  {background-color: rgba(226, 58, 232, 0.33);
+        background-size: 50%}
+    100% {background-color: #ffffff;
+        background-size: 100%}
+}
+
+.featured__height {
+    height: fit-content !important;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+

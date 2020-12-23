@@ -1,0 +1,14 @@
+.sideInfo {
+    display: flex;
+    color: #111;
+    height: 100%;
+    background-color: white;
+    overflow:hidden;
+    overflow-y:auto;
+}
+
+.sideInfo__body {
+    width: 100% !important;
+    height: fit-content;
+    font-size: 15px;
+}

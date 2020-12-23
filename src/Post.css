@@ -1,0 +1,79 @@
+
+
+.post__image {
+    background-color: #eee;
+    display: inline-block;
+    width: 100%;
+    min-height: 109px;
+    border-radius: 6px;
+    box-shadow: 0 0 1px 0 #222;
+}
+
+figure {
+    width: 100% !important;
+    height: auto !important;
+}
+figcaption {
+    padding: 0.5rem 1rem 0.4rem;
+    background: #ddd;
+    color: #333;
+    border-radius: 6px 6px 0 0;
+    text-align: end;
+}
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+h3 {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+}
+aside {
+    margin: 6rem 0;
+    max-width: 80ch;
+    padding: 2rem 2rem 1rem;
+    border: 1px solid #000;
+}
+p {
+    margin: 1rem 0;
+    color: #444;
+    font-weight: 400;
+}
+code {
+    font-size: 1.07rem;
+    color: #d45b2c;
+}
+input {
+    margin: 0;
+}
+label {
+    margin: 0 1.1rem 0 0.1rem;
+}
+
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.post__comments {
+    height: auto;
+    font-size: 13px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    text-shadow: none;
+    color: #007186;
+    z-index: 999999;
+}
+
+.div-hold {
+    display: flex;
+    flex-direction: column;
+}

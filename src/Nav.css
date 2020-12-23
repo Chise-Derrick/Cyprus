@@ -1,0 +1,180 @@
+.nav__link {
+    padding: 6px 6px;
+    width: 90px;
+    float: left;
+    font-size: 13px;
+    position: relative;
+    margin: 1px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    background:linear-gradient(180deg, rgb(192, 210, 224), #FFFFFF);
+    border: 1px solid rgba(146, 48, 48, 0.2);
+    border-radius: 3px 3px 0 0;
+    border-bottom: none;
+    transition: all 0.2s ease-in;
+    opacity: 1;
+    color: #174268;
+    box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.2), inset 0 2px 2px 0 rgba(255, 255, 255, 0.62);
+}
+
+.nav__link:hover {
+    background:linear-gradient(33deg, #fff, #abd1e3);
+    border: 1px solid rgba(0, 154, 132, 0.3);
+    border-left-color: rgba(217, 139, 139, 0.1);
+    border-bottom-color: rgba(146, 48, 48, .1);
+    text-shadow: 0 1px 0 white;
+    box-shadow: inset 0 -1px 1px 0 rgba(255, 255, 255, 0.4);
+    color: #013766;
+    opacity: 1;
+}
+
+.navigationMenu li{
+    list-style:none;
+    height:52px;
+    padding:1px;
+    width:52px;
+}
+
+.navigationMenu span{
+    /* Container properties */
+    display: flex;
+    width:0;
+    right:51px;
+    padding:0;
+    margin-top: 1px;
+    position:absolute;
+    overflow:hidden;
+    flex-direction: row-reverse;
+    opacity: 0.95;
+    /* Text properties */
+    font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+    font-size:18px;
+    height:50px;
+    font-weight:bold;
+    letter-spacing:0.6px;
+    white-space:nowrap;
+    line-height:52px;
+    border-radius: 3px 0 0 3px;
+    box-shadow: inset 0 0 19px 0 rgba(255, 255, 255, 0.35), -1px 1px 1px 0 rgba(0, 0, 0, 0.3);
+
+    /* CSS3 Transition: */
+    -webkit-transition: 0.25s;
+
+    /* Future proofing (these do not work yet): */
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.navigationMenu a{
+    background:url('./masonry/nav.png') no-repeat;
+    height:52px;
+    width:52px;
+    display:block;
+    position:relative;
+}
+
+/* General hover styles */
+
+.navigationMenu a:hover span{  width:auto; padding:0 20px;overflow:visible; }
+.navigationMenu a:hover{
+    text-decoration:none;
+    /* CSS outer glow with the box-shadow property */
+    -moz-box-shadow:0 0 5px #9ddff5;
+    -webkit-box-shadow:0 0 5px #9ddff5;
+    box-shadow:0 0 5px #9ddff5;
+}
+
+/* Green Button */
+
+.navigationMenu .nav__linkUnderwater {
+    background-position:0 -52px;
+}
+.navigationMenu .nav__linkUnderwater:hover {
+    background-position:0 0;
+    transform: scale(1.05)
+}
+.navigationMenu .nav__linkUnderwater span{
+    background-color:#41E7FF;
+    color: #09343b;
+    text-shadow:1px 1px 0 #c5f0f6;
+}
+
+/* Blue Button */
+
+.navigationMenu .nav__linkLandscapes {
+    background-position:-52px -52px;
+}
+.navigationMenu .nav__linkLandscapes:hover {
+    background-position:-52px 0;
+    transform: scale(1.05)
+}
+
+.navigationMenu .nav__linkLandscapes span{
+    background-color: #A4FF9D;
+    color: #185714;
+    text-shadow:1px 1px 0 #d8f8d5;
+}
+
+/* Orange Button */
+
+.navigationMenu .nav__linkTowns { background-position:-104px -52px;}
+.navigationMenu .nav__linkTowns:hover {
+    background-position:-104px 0;
+    transform: scale(1.05)
+}
+.navigationMenu .nav__linkTowns span{
+    background-color:#FFDCA0;
+    color: #45310d;
+    text-shadow:1px 1px 0 #fcebd0;
+}
+
+/* Yellow Button */
+
+.navigationMenu .nav__linkRestaurants { background-position:-156px -52px;}
+.navigationMenu .nav__linkRestaurants:hover{
+    background-position:-156px 0;
+    transform: scale(1.05)
+}
+.navigationMenu .nav__linkRestaurants span{
+    background-color:#FFFFB5;
+    color: #4c4c0f;
+    text-shadow:1px 1px 0 #fdfdf0;
+}
+
+/* Purple Button */
+
+.navigationMenu .nav__linkBusiness { background-position:-208px -52px;}
+.navigationMenu .nav__linkBusiness:hover {
+    background-position:-208px 0;
+    transform: scale(1.05)
+}
+.navigationMenu .nav__linkBusiness span{
+    background-color:#FFA5FF;
+    color: #4c124c;
+    text-shadow:1px 1px 0 #fdcffd;
+}
+
+/* The styles below are only needed for the demo page */
+
+.nav__linksSmall{
+    position:absolute;
+    top: 9px;
+    left: -150px;
+    width: 150px;
+    z-index: 99999;
+}
+
+.navigationMenu {
+    margin: 0;
+    float: right;
+    padding: 0;
+    background-color: lightgrey;
+    width: 54px;
+    border-right: 1px solid rgba(255, 0, 8, 0.38);
+    border-top: 1px solid rgba(255, 0, 8, 0.38);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 0 1px white;
+}
+
+
+
